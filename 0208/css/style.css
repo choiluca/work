@@ -1,0 +1,27 @@
+div{
+    width: 300px;
+    height: 300px;
+}
+.box{
+    background-color:#f4de11;
+    border:1px solid #000;
+}
+.box1{
+    background:#55f214;
+    border:1px dashed #0f0fef;
+}
+.box2{
+    background:url(../images/031smile.JPG) no-repeat
+    center;
+    border-radius:50%;
+}
+.box3{
+    background-color:#0606f9;
+    border:5px solid #55f214;
+    border-top-left-radius:50%;
+    border-bottom-right-radius:50%;
+}
+.box4,.box5,.box6{
+    background-color:#f4de11;
+    border-radius:40px;
+}
