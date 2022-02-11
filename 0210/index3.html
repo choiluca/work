@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .movcontainer{
+            width:800px;
+            height:470px;
+            margin:30px auto;
+            position:relative;
+        }
+        h1{
+            position:absolute;
+            top:30px;
+            width:100%;
+            text-align: center;
+            color:#fff;
+            z-index:999;
+        }
+        .movcontainer iframe{
+            width:100%;
+            height:100%;
+            position:absolute;
+            top:0;
+            left:0;
+        }
+    </style>
+</head>
+<body>
+    <p>영상을 movecontainer박스에 꽉 채운 다음에 영상을 배경으로 만들어 그 위에 h1태그로
+        글씨를 쓰세요
+    </p>
+    <!-- <video width="600" height="400" controls poster="images/002.jpg">
+        <source src="date/Sunset - 86879.mp4" type="video/mp4">
+        <source src="date/Sunset - 86879.ogg" type="video/ogg">
+        브라우저가 video를 지원하지 않습니다. 업데이트 하세요.
+    </video> -->
+    <div class="movcontainer"></div>
+    <h1>어쩌구 저쩌구</h1>
+    <iframe src="https://www.youtube.com/embed/y3QUKf1wRF8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
+</body>
+</html>
