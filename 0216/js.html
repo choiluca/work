@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript-제어문1</title>
+</head>
+<body>
+    <script>
+        var site = prompt("당신이 즐겨 쓰는 포털 사이트는?");
+        var url;
+
+        switch(site){
+            case "구글":
+                 url = "http://google.com";
+            break;
+            case "네이버":
+                 url = "http://naver.com";
+            break;
+            case "다음": 
+                 url = "http://daum.net";
+            break;
+            default:
+                 alert("그 사이트가 어딘지 모르겠어요");              
+        }
+         if(url) location.href=url;  //location.reload();
+    </script>
+</body>
+</html>
