@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title></title>
+<style>
+   *{ box-sizing:border-box;}  /* padding, border 의 값은 모두 인라인 처리 */
+   body{
+       margin:20px;
+   }
+   header{
+       background:#ddd;
+       text-align:center;
+       padding:20px;
+   }
+   nav{
+       background-color:#333;
+       margin-top:20px;
+       margin-bottom:20px;
+       padding:20px;
+       overflow:hidden;  
+       /** float:left 될 경우 nav::after 에 clear:both 해도 되고 nav에 overflow:hidden 또는 overflow:auto 를 줘도 된다. */
+   }
+   nav a{
+       display:block;
+       padding:15px 18px;
+       color:#f2f2f2;
+       text-decoration: none;
+       text-align:center;
+       float:left;
+    }
+
+    nav a:hover{
+        background-color:#f2f2f2;
+        color:#333;
+    }
+    aside, main{
+        float:left;
+        padding-left:10px;
+        padding-right:10px;
+    }
+    aside{
+        width:33.333334%;
+    }
+    main{
+        width:33.333334%;
+        font-size:1.5em;
+    }
+    .row{
+      margin-left:-10px;
+      margin-right:-10px;
+      overflow:auto;    
+    }
+    .init{
+        background:#ddd;
+        padding:20px;
+        min-height:300px;
+    }
+    footer{
+        padding:20px;        
+    }
+</style>
+</head>
+<body>
+    <header>
+        <h1>Header</h1>
+    </header>
+    <nav>
+       <a href="#">Link1</a>
+       <a href="#">Link2</a>
+       <a href="#">Link3</a> 
+    </nav>
+<div class="row">  
+    <aside>
+        <div class="init">aside left</div>
+    </aside>
+    <main>
+        <div class="init">main</div>
+    </main>
+    <aside>
+        <div class="init">aside right</div>
+    </aside>
+</div>  
+<footer>
+    <p>footer</p>
+</footer>
+</body>
+</html>

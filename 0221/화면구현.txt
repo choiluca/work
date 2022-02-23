@@ -1,0 +1,13 @@
+1문항.
+
+코드를 작성했을 때 <center> 부분에 오류가 뜬다.
+스타일 시트를 따로 만들어서 입력하면 오류 수정 가능.
+aside, contents, footer 를 시멘틱 태그로 앞으로 뺀 후 작성.
+
+2문항. 
+
+메인메뉴1 에 올렸을 때 서브메뉴1이 나와야 되고, 메인메뉴2 에 올렸을 때 서브메뉴2가 나오며 
+커서를 옮겼을 때 서브메뉴가 클릭 할 수 있어야 하는데 문제의 코드에서는 그렇게 되지 않았다.
+class 를 navigation, subnavigation 으로 지정했는데 위의 코드 처럼 입력을 해주고 
+스타일 시트에서 subnavigation에 overflow:hidden 을, navigation 의 자식인 li 메인메뉴 에 커서를 올렸을 때
+서브메뉴가 나오게 해야되므로 navigation>li:hover 로 수정해주면 이를 해결 할 수 있다.
