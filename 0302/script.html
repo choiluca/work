@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin:100px;
+        }
+    </style>
+    <script>
+        function yok(){
+           var str = document.getElementById("box").value;
+              if(str.indexOf("개")>-1){
+                  alert("욕하지마세요");
+              }
+        }
+
+    </script>
+</head>
+<body>
+<!-- //  var 변수 = ["원소1", "원소2"];
+
+    var 변수 = new String(문자형데이터);
+    ex)  var str = new String("hello javascript");
+         var str = "hello javascript";     -->
+    <input type="text" id="box" name="box" onkeyPress="yok(this)">
+
+
+    <script>
+        var str = "Hello Thank you good luck to you";
+
+        document.write(str.charAt(10), "<br>");  //문자열의 인덱스 번호에 저장된 문자를 반환
+
+        //문자열 검색
+        document.write(str.indexOf("you", 15), "<br>");  //문자열 왼쪽부터 제일 먼저 발견된 you의 인덱스값을 반환한다. 값이 없으면 -1을 출력, 두 번째 인자를 이용하여 인덱스 검색 시작위치를 지정할 수 있다.
+        document.write(str.lastIndexOf("you", 25), "<br>");
+
+        document.write(str.match("luck"), "<br>"); //같은 단어를 반환해준다. 없으면 null을 반환한다.
+        document.write(str.search("you"), "<br>"); //indexOf 와 같지만 위치지정을 할 수는 없다.
+
+        //문자열 자르기
+        document.write("문자열자르기 :" + str.substr(21, 4), "<br>");  //문자열 인덱스번호 21부터 4자를 가져옴
+        document.write("문자열 자르기2 :" + str.substring(6, 12), "<br>");  //인덱스번호 6부터 12이전(11)까지 가져옴
+
+
+        var t = "musecom.net";
+        console.log(t.substr(3,5)); //ecom.
+        consloe.log(t.substr(-2)); //et
+        console.log(t.substr(-2, 2));
+        console.log(t.length);
+        console.log(t.substr(1, t.legnth));
+        console.log(t.substr(-0, t.length-1));
+
+    </script>
+    
+</body>
+</html>
